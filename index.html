@@ -539,7 +539,7 @@
         </div>
         <div class="ticket-field">
           <span class="field-label">Itinerary</span>
-          <span class="field-value">Tonight</span>
+          <span class="field-value">Saturday</span>
         </div>
       </div>
 
@@ -579,11 +579,11 @@
         </div>
       </div>
 
-      <div class="confirmed" id="confirmed" hidden>Perfect, <span id="confirmed-plan"></span> it is. Text me and I'll see you tonight. 🧭</div>
+      <div class="confirmed" id="confirmed" hidden>Perfect, <span id="confirmed-plan"></span> it is. Text me and I'll see you Saturday. 🧭</div>
 
       <div class="decline-wrap" id="decline-wrap">
         <span class="decline-label">or, if you must</span>
-        <button id="decline-btn" type="button">I have other plans tonight</button>
+        <button id="decline-btn" type="button">I have other plans Saturday</button>
       </div>
 
       <footer class="sign">Kenny</footer>
@@ -667,7 +667,7 @@
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
           access_key: WEB3FORMS_KEY,
-          subject: "Teresa picked a date tonight 🧭",
+          subject: "Teresa picked a date for Saturday 🧭",
           from_name: "Teresa's Invite",
           message: 'Teresa chose: ' + planNames[id] + '\nPicked at: ' + new Date().toLocaleString()
         })
